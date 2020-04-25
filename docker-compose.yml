@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+  dev:
+    build: .
+    container_name: dev-test
+    volumes:
+      - type: bind
+        source: ./cppsrc
+        target: /cppsrc
+    tty: true
+    stdin_open: true
+    
