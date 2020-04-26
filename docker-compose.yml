@@ -1,7 +1,8 @@
 version: '3.3'
 services:
   dev:
-    build: .
+    #build: .
+    image: aoenpi2/cpp-compiler-test
     container_name: dev-test
     volumes:
       - type: bind
